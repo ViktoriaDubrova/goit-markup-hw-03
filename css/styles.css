@@ -60,6 +60,7 @@ img {
 
 .link:hover {
     color: var(--color-link);
+    text-decoration-line: underline;
 }
 
 a, li {
@@ -71,9 +72,9 @@ a, li {
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
-    outline: 2px solid red;
 }
-    
+/* outline: 2px solid red;  */
+
 .section {
     padding: 120px 0;
 }
@@ -126,7 +127,7 @@ a, li {
 
 /* --- HEADER ---  */
 .header-list {
-    padding-left: 76px;
+    margin-left: 76px;
     display: flex;
     flex-direction: row;    
     gap: 40px;   
@@ -157,6 +158,8 @@ a, li {
     font-style: normal;
     color: var(--brand-color);
     gap: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .mail-tel:hover {
@@ -206,10 +209,6 @@ a, li {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-}
-
-.hero-text-btn:focus { 
-    background: #404BBF;
 }
 
 /* --- ABOUT SECTION ---  */
@@ -284,6 +283,8 @@ a, li {
 .name-empl {
     font-weight: 500;
     font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 8px;
 }
 
 .empl-list {
@@ -304,6 +305,7 @@ a, li {
 .empl-content {
     text-align: center;
     padding: 32px 0;
+    background: #FFFFFF;
 }
 
 /* ---  FOOTER SECTION  --- */
@@ -319,6 +321,11 @@ a, li {
 
 .logo-color-down {
     color: #F4F4FD;
+}
+
+.logo-footer {
+    padding: 0;
+    margin-bottom: 16px;
 }
 
 /* ---  BTN SECTION  --- */
@@ -347,8 +354,6 @@ a, li {
 .modal-btn {
     background: #F4F4FD;
     color: var(--color-link);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-          0px 2px 2px rgba(0, 0, 0, 0.12);
     border: 1px solid #e7e9fc;
     font-family: inherit;
     font-weight: 500;
@@ -357,9 +362,11 @@ a, li {
     letter-spacing: 0.04em;
     padding: 12px 24px;
 }
-
+ /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+          0px 2px 2px rgba(0, 0, 0, 0.12); */
 .btn:hover,
 .btn:focus {   
+    background-color: #404BBF;
 }
 
 /* ---  IMG SECTION  --- */
